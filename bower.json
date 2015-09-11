@@ -1,0 +1,20 @@
+{
+  "name": "nashafa-github.io",
+  "version": "1.0.0",
+  "homepage": "https://github.com/nashafa/nashafa.github.io",
+  "authors": [
+    "Nathan Fallahi <nathanfallahi@gmail.com>"
+  ],
+  "description": "nashafa github page",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}
