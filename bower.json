@@ -1,6 +1,6 @@
 {
   "name": "nashafa-github.io",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "homepage": "https://github.com/nashafa/nashafa.github.io",
   "authors": [
     "Nathan Fallahi <nathanfallahi@gmail.com>"
@@ -15,6 +15,9 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.0.0"
+    "polymer": "Polymer/polymer#^1.0.0",
+    "iron-elements": "PolymerElements/iron-elements#~1.0.3",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.5",
+    "neon-elements": "PolymerElements/neon-elements#~1.0.0"
   }
 }
