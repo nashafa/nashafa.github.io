@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+# Welcome to Amplified for Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -8,14 +8,25 @@
 # Site settings
 title: Nashafa's Blog
 email: contact@nashafa.com
-description: > # this means to ignore newlines until "baseurl:"
-  Just a boy and his keyboard. Read more about me on my about page.
+description: >
+  This is the description for this website...
+logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: nashafa
-github_username:  nashafa
+url: "https://nashafa.com" # the base hostname & protocol for your site
+paginate:	5 # The number of posts to show per page on your homepage
+
+name: 'Nathan Fallahi'
+bio: >
+  Just a boy and his keyboard.
+author_image: "/assets/images/author.jpg"
+twitter_username: Nashafa
+github_username:  Nashafa
 
 # Build settings
 markdown: kramdown
 
-exclude: [bower_components, bower.json, README.md, LICENSE]
+kramdown:
+  parse_block_html: true
+
+gems:
+  - jekyll-paginate
