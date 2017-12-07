@@ -1,50 +1,66 @@
----
-layout: default
----
-
-<main class="content" role="main">
-
-  <header class="blog-header">
-      <h1 class="blog-title">{{ site.title }}</h1>
-      <h2 class="blog-description">{{ site.description }}</h2>
-  </header>
-
-  <div class="cf frame">
-    {% for post in paginator.posts %}
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-        <div class="article-item">
-          <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-          </header>
-          <section class="post-excerpt" itemprop="description">
-            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-          </section>
-          <div class="post-meta">
-            <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-          </div>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-
-  <nav class="pagination" role="navigation">
-    {% if paginator.next_page %}
-      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
-    {% else %}
-      <a class="newer-posts disabled">&larr; Older posts</a>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
-      {% else %}
-        <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-      {% endif %}
-    {% else %}
-      <a class="older-posts disabled">Newer posts &rarr;</a>
-    {% endif %}
-  </nav>
-
-</main>
-
-{% include footer.html %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Nathan Fallahi</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Pacifico');
+      html, body {
+        height: 100%;
+      }
+      #background {
+        background-image:url(assets/background.jpg);
+        height: 110%;
+        width: 110%;
+        position:absolute;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        filter: blur(5px);
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      #header {
+        font: 7vmax Pacifico, serif;
+      }
+      img {
+        height: 5vmax;
+        width: 5vmax;
+      }
+      #social_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .social {
+        padding: 1vmax;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="header">Nathan Fallahi</div>
+    <div id="social_box">
+      <div class="social" id="facebook">
+        <a href="https://www.facebook.com/nsfallahi"><img src="assets/facebook.svg" alt="Facebook"></img></a>
+      </div>
+      <div class="social" id="twitter">
+        <a href="https://twitter.com/Nashafa"><img src="assets/twitter.svg" alt="Twitter"></img></a>
+      </div>
+      <div class="social" id="instagram">
+        <a href="https://www.instagram.com/nashafa/"><img src="assets/instagram.svg" alt="Instagram"></img></a>
+      </div>
+      <div class="social" id="linkedin">
+        <a href="https://www.linkedin.com/in/nashafa/"><img src="assets/linkedin.svg" alt="Linkedin"></img></a>
+      </div>
+      <div class="social" id="github">
+        <a href="https://github.com/nashafa"><img src="assets/github.svg" alt="GitHub"></img></a>
+      </div>
+    </div>
+  </body>
+</html>
