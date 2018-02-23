@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 10px 10px;
+    flex-basis: 0;
+}
+
+#header_container {
+    flex-grow: 1;
+}
+
+#header_top {
+    display: flex;
+    justify-content: center;
+}
+
+#nathan {
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+    border-radius: 50%;
+}
+
+#header_name {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    padding-left: 10px;
+}
+
+#portfolio {
+    flex-grow: 2;
+}
+
+h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    /* text-decoration: underline; */
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: green;
+}
+
+p {
+    font-family: "Merriweather", serif;
+}
+
+@media screen and (max-width: 990px) {
+    .column {
+        flex-basis: 100%;
+    }
+}
