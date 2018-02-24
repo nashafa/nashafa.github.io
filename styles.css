@@ -75,7 +75,7 @@ body {
 }
 
 .portfolio_entry p {
-    max-width: 900px;
+    max-width: 720px;
 }
 
 h1 {
@@ -126,8 +126,7 @@ p a:visited {
         text-align: center;
     }
     #portfolio_container {
+        justify-content: center;
         flex-grow: 1;
-    }
-    .portfolio_entry p {
     }
 }
