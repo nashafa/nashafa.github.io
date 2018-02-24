@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #FAFAFA;
+    height: 100%;
+}
+
+.column {
+
+}
+
+#header_container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 0px 16px;
+    align-items: center;
+}
+
+#header_top {
+    display: flex;
+}
+
+#nathan_image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+#header_name {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    padding-left: 16px;
+}
+
+#header_bio {
+    max-width: 360px;
+}
+
+#header_social {
+    padding-bottom: 16px;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    padding: 0px 8px;
+}
+
+#portfolio_container {
+    background-color: #ffffff;
+    overflow: auto;
+    padding: 0px 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 2px;
+    display: flex;
+}
+
+.portfolio_entry {
+
+}
+
+.portfolio_entry h1 {
+
+}
+
+.portfolio_entry p {
+    max-width: 900px;
+}
+
+h1 {
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1 a:link {
+    color: black;
+}
+
+h1 a:visited {
+    color: black;
+}
+
+h1 a:hover {
+    color: #009bcd;
+}
+
+p {
+    font-family: "Noto Serif", serif;
+}
+
+p a:link {
+    color: #009bcd;
+}
+
+p a:visited {
+    color: #009bcd;
+}
+
+@media screen and (max-width: 990px) {
+    body {
+        flex-direction: column;
+    }
+    #nathan_image {
+        height: 120px;
+        width: 120px;
+    }
+    #header_name {
+        font-size: 33px;
+        line-height: 40px;
+    }
+    #header_container {
+        flex-grow: 0;
+    }
+    #header_bio {
+        max-width: 560px;
+        text-align: center;
+    }
+    #portfolio_container {
+        flex-grow: 1;
+    }
+    .portfolio_entry p {
+    }
+}

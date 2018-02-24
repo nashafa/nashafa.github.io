@@ -1,69 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Nathan Fallahi</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Pacifico');
-      html, body {
-        height: 100%;
-      }
-      #background {
-        background-image:url(assets/background.jpg);
-        height: 120%;
-        width: 120%;
-        position:absolute;
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-        filter: blur(5px);
-      }
-      body {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-      }
-      #header {
-        font: 7vmax Pacifico, serif;
-      }
-      img {
-        height: 5vmax;
-        width: 5vmax;
-      }
-      #social_box {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-      .social {
-        padding: 1vmax;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="background"></div>
-    <div id="header">Nathan Fallahi</div>
-    <div id="social_box">
-      <!-- <div class="social" id="facebook">
-        <a href="https://www.facebook.com/nsfallahi"><img src="assets/facebook.svg" alt="Facebook"></img></a>
-      </div>
-      <div class="social" id="twitter">
-        <a href="https://twitter.com/Nashafa"><img src="assets/twitter.svg" alt="Twitter"></img></a>
-      </div>
-      <div class="social" id="instagram">
-        <a href="https://www.instagram.com/nashafa/"><img src="assets/instagram.svg" alt="Instagram"></img></a>
-      </div> -->
-      <div class="social" id="linkedin">
-        <a href="https://www.linkedin.com/in/nashafa/"><img src="assets/linkedin.svg" alt="Linkedin"></img></a>
-      </div>
-      <div class="social" id="github">
-        <a href="https://github.com/nashafa"><img src="assets/github.svg" alt="GitHub"></img></a>
-      </div>
-      <div class="social" id="mail">
-        <a href="mailto:nathan@nashafa.com"><img src="assets/mail.svg" alt="Mail"></img></a>
-      </div>
+
+<head>
+    <title>Nathan Fallahi | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="header_container" class="column">
+        <div id="header_top">
+            <img id="nathan_image" src="assets/nathan.jpg">
+            <div id="header_name">
+                nathan<br>
+                shayan<br>
+                fallahi
+            </div>
+        </div>
+        <div id="header_bio">
+            <p>Currently attending UCSD and pursuing a B.S.
+                in Cognitive Science. Interested in Machine Learning
+            and practically anything technology related.</p>
+        </div>
+        <div id="header_social">
+            <a href="https://www.linkedin.com/in/nashafa/"><img class="social"
+                src="assets/linkedin.svg" alt="Linkedin"></img></a>
+            <a href="https://github.com/nashafa"><img class="social"
+                src="assets/github.svg" alt="GitHub"></img></a>
+            <a href="mailto:nathan@nashafa.com"><img class="social"
+                src="assets/mail.svg" alt="Mail"></img></a>
+        </div>
     </div>
-  </body>
+    <div id="portfolio_container" class="column">
+        <div class="portfolio_entry">
+            <h1><a href="https://nashafa.com/alternative-vote-web/">alternative-vote-web</a></h1>
+            <p>JavaScript code to determine winners of an alternative vote election.
+                Initially built for <a href="https://www.ncdm.us/what-is-yg/">the NCDM Y&G delegation</a>,
+                this site automates the vote counting process of an alternative vote or instant-runoff election.
+                I took inspiration from Python code written by a former delegation president
+                and thought to make an improved, easier to use web version.</p>
+        </div>
+    </div>
+</body>
+
 </html>
